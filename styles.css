@@ -20,3 +20,6 @@ body {
     width: 30px;
     border: solid black 1px;
 }
+.filledSquare {
+    background-color: black;
+}
