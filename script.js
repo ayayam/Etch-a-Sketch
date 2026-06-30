@@ -4,7 +4,7 @@ const gridPromptButton = document.createElement("button");
 container.appendChild(gridPromptButton);
 gridPromptButton.textContent = "Make a grid!";
 gridPromptButton.classList.add("gridMaker");
-const gridNumer = 0;
+let gridNumber = 0;
 
 gridPromptButton.addEventListener("click", () => {
     gridNumber = Number(prompt("What size grid would you like? (Pick 1 - 100)"));
