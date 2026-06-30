@@ -18,7 +18,7 @@ body {
 .gridMaker {
     width: fit-content;
     margin-top: 50px;
-    
+    padding: 20px 50px;
 }
 
 .container {
@@ -26,12 +26,11 @@ body {
     flex-wrap: wrap;
     align-content: center;
     margin: auto;
-    height: 700px;
-    width: 700px;
+    height: 600px;
+    width: 600px;
 }
 
 .square {
-    
     border: solid black 1px;
 }
 .filledSquare {

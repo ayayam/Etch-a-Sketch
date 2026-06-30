@@ -19,20 +19,18 @@ gridPromptButton.addEventListener("click", () => {
 
 function createGrid(gridNumber) {
     const gridArea = gridNumber * gridNumber;
-    const size = (700 / gridNumber) - 1;
+    const size = 100 / gridNumber;
 
     for (let i = 0; i < gridArea; i++) {
         const square = document.createElement("div");
         square.classList.add("square");
-        square.style.height = `${size}px`;
-        square.style.width = `${size}px`;
+        square.style.height = `${size}%`;
+        square.style.flexBasis = `${size}%`;
         square.addEventListener("mouseenter", () => {
             square.classList.toggle("filledSquare");
         })        
 
         container.appendChild(square);
-
-
     }    
 }
 
