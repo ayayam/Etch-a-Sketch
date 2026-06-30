@@ -27,7 +27,11 @@ function createGrid(gridNumber) {
         square.style.height = `${size}%`;
         square.style.flexBasis = `${size}%`;
         square.addEventListener("mouseenter", () => {
-            square.classList.toggle("filledSquare");
+            let R = Math.floor(Math.random() * 256);
+            let B = Math.floor(Math.random() * 256);
+            let G = Math.floor(Math.random() * 256);
+
+            square.style.backgroundColor = `rgb(${R}, ${G}, ${B})`;
         })        
 
         container.appendChild(square);
