@@ -15,6 +15,10 @@ body {
     margin: 150px 490px;
 }
 
+.gridMaker {
+    width: fit-content;
+}
+
 .square {
     height: 30px;
     width: 30px;

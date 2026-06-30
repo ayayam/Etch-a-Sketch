@@ -2,7 +2,16 @@
 const container = document.querySelector(".container");
 const gridPromptButton = document.createElement("button");
 container.appendChild(gridPromptButton);
-const gridNumber = Number(prompt("What size grid would you like? (Pick 1 - 100)"));
+gridPromptButton.textContent = "Make a grid!";
+gridPromptButton.classList.add("gridMaker");
+const gridNumer = 0;
+
+gridPromptButton.addEventListener("click", () => {
+    gridNumber = Number(prompt("What size grid would you like? (Pick 1 - 100)"));
+    gridPromptButton.remove();
+    createGrid();
+    return gridNumber;
+})
 
 function createGrid() {
 
@@ -16,10 +25,11 @@ function createGrid() {
 
         container.appendChild(square);
     }    
-    
 }
 
-createGrid();
+
+
+
 
 
 
