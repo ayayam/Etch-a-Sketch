@@ -11,15 +11,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .gridMaker {
     width: fit-content;
+    margin-top: 50px;
+    
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: auto;
+    height: 700px;
+    width: 700px;
 }
 
 .square {
