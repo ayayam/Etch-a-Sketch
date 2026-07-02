@@ -30,8 +30,10 @@ function createGrid(gridNumber) {
         square.addEventListener("mouseenter", () => {
             if (opacity <= 100) {
                 opacity += 10;
-                square.style.backgroundColor = `rgb(0 0 0 / ${opacity}%)`;                
+            } else {
+                opacity = 0;
             }
+            square.style.backgroundColor = `rgb(0 0 0 / ${opacity}%)`;     
         })        
 
         container.appendChild(square);
